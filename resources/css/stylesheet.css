@@ -1,0 +1,188 @@
+/*DFA RPI STYLESHEET*/
+body{
+	background: #BCBCBC;
+	margin: 0;
+	padding: 0;
+	font-family: 'Oxygen', sans-serif;
+}
+
+/*Classes*/
+.card{
+	background-color: white;
+	box-shadow: 0 7px 5px rgba(0, 0, 0, 0.5);
+	margin: 2% 20%;
+}
+
+/*Page Head*/
+header{
+	margin: 0 auto;
+	width: 60%;
+	transition: 1s;
+	padding: 8% 0;
+	text-align:center;
+	color:white;
+	background-color:#E3051E;
+	box-shadow: 0 7px 5px rgba(0, 0, 0, 0.5);
+}
+
+header:hover{
+	width: 80%;
+}
+
+h1{
+	font-size: 350%;
+	padding: 0;
+	margin:0;
+}
+
+h2{
+	margin: 0;
+	padding: 0;
+}
+
+/*Navigation Bar*/
+nav{
+	position:fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	font-weight: bold;
+	background-color: white;
+	box-shadow: 0 7px 5px rgba(0, 0, 0, 0.5);
+	padding: 0 0.5%;
+	text-align: right;
+	z-index: 1;
+}
+
+nav img{
+	margin: 1% 20%;
+	height: 2%;
+	width: 2%;
+	float: left;
+}
+
+nav ul{
+	float: right;
+	margin: 1.3% 20% 0.7% 0;
+}
+
+nav li{
+	list-style:none;
+	display:inline;
+	margin: 0 10px;
+}
+
+nav li a:link{
+	text-decoration: none;
+	color: black;
+}
+
+nav li a:visited{
+	text-decoration: none;
+	color: black;
+}
+
+nav li a:hover{
+	text-decoration: none;
+	color: #E3051E;
+}
+
+nav li a:active{
+	text-decoration: none;
+	color: #E3051E;
+}
+
+/*Owl Carousel*/
+#slider{
+	width: 60%;
+}
+
+#slider .item img{
+	display: block;
+	width: 96%;
+	height: auto;
+	margin: 2% 2% 5% 2%;
+}
+
+/*Information*/
+#about h1{
+	text-align: center;
+}
+
+#about li{
+	float: left;
+	display: inline;
+	width: 30%;
+	margin: 0 1%;
+}
+
+/*Join Button*/
+button{
+	background-color: #E3051E;
+	border-style: none;
+	border-radius: 10%;
+	color: white;
+	box-shadow: 100px 100px 0 0;
+	margin: 50px 40%;
+	width: 20%;
+	padding: 1%;
+	box-shadow: 0 7px 5px rgba(0, 0, 0, 0.5);
+	transition: 0.3s;
+}
+
+button:hover{
+	box-shadow: 0 1px 5px rgba(0, 0, 0, 0.5);
+}
+
+/*Current Projects*/
+#loft{
+	text-align: center;
+}
+
+#loft a{
+	text-decoration: none;
+}
+
+#loft a:link{
+	color: black;
+}
+
+#loft a:visited{
+	color: black;
+}
+
+#loft a:hover{
+	color: #E3051E;
+}
+
+#loft table{
+	width: 100%;
+	margin: 1% auto;
+	border-spacing: 25px;
+}
+
+#loft td{
+	text-align: center;
+	width: 25%;
+	background-color: white;
+	padding: 0;
+	border: 1px solid rgba(0, 0, 0, 0.25);
+	box-shadow: 0 7px 5px rgba(0, 0, 0, 0.5);
+}
+
+#loft h6{
+	font-size: 100%;
+}
+
+#loft img{
+	margin: 0 12%;
+	width: 75%;
+	height: 75%;
+	border-radius: 100%;
+	box-shadow: 0 7px 5px rgba(0, 0, 0, 0.5);
+}
+
+/*Footer*/
+footer{
+	text-align: center;
+}
