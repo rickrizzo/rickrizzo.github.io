@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Breadcrumbs</title>
+	</head>
+	<body>
+		
+		<!--Get Location-->
+		<button id="locationButton" onclick="getLocation()">Get Location</button>
+		
+		<!--Show Location-->
+		<span id="location"></span>
+		
+		
+		<script>
+			//Variables
+			var crumb = document.getElementById("location");
+		
+			//Get Location
+			function getLocation() {
+				if (navigator.geolocation) {
+					navigator.geolocation.getCurrentPosition(showPosition);
+				} else {
+					crumb.innerHTML = "Geolocation not supported";
+				}
+			}
+			
+			//Output Location
+			function showPosition(position) {
+				crumb.innerHTML = "Latitude: " + position.coords.latitude +
+				"<br>Longitude: " + position.coords.longitude;
+			}
+		</script>
+	</body>
+</html>
