@@ -1,20 +1,7 @@
+body{
+	
+}
+
 header{
-	text-align: center;
-}
-
-blockquote{
-	margin-left: 10em	;
-}
-
-blockquote footer{
-	text-align:left;
-}
-
-#main{
-	margin: 0 1em;
-	text-align: center;
-}
-
-footer{
-	text-align: center;
+	text-align:center;
 }
