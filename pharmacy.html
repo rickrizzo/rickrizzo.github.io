@@ -62,15 +62,24 @@
 					<br/>
 					<small>We'll get you there</small>
 				</h1>
-				<a class="btn btn-success btn-lg" href="#info" role="button">Sign Up</a>
 			</div>
 		</header>
 		
-		<!--Setup-->
+		<!--Settings-->
 		<div id="info" class="container">
 			<form>
 				<div class="form-group">
-					<div class="col-md-6">
+					<div class="col-md-12">
+						<label for="child">Child</label>
+						<select id="child"class="form-control">
+							<option>Kevin</option>
+							<option>Alexa</option>
+							<option>Dave</option>
+							<option>Amy</option>
+							<option>Steven</option>
+						</select>
+					</div>
+					<div class="col-md-3">
 						<label for="medication">Medication</label>
 						<select id="medication"class="form-control">
 							<option>Diabetes</option>
@@ -80,9 +89,9 @@
 							<option>Other</option>
 						</select>
 					</div>
-					<div class="col-md-6">
-						<label for="">Frequency</label>
-						<select id="medication"class="form-control">
+					<div class="col-md-3">
+						<label for="frequency">Frequency</label>
+						<select id="frequency"class="form-control">
 							<option>Hourly</option>
 							<option>Daily</option>
 							<option>Weekly</option>
@@ -91,16 +100,24 @@
 							<option>Every Three Months</option>
 						</select>
 					</div>
-					<div class="col-md-6">
+					<div class="col-md-3">
+						<label for="rewardPeriod">Reward Period</label>
+							<div class="input-group">
+							<div class="input-group-addon">Every</div>
+								<input type="text" id="duration" class="form-control" placeholder="Ex: 3">
+								<div class="input-group-addon">Days</div>
+							</div>
+					</div>
+					<div class="col-md-3">
 						<label for="duration">Duration</label>
 						<div class="input-group">
 							<input type="text" id="duration" class="form-control" placeholder="Ex: 4">
-							<div class="input-group-addon">weeks</div>
+							<div class="input-group-addon">Months</div>
 						</div>
 					</div>
-					<div class="col-md-6">
+					<div class="col-md-3">
 						<label for="">Reward</label>
-						<input type="text" class="form-control" placeholder="1 Hour Screen Time">
+						<input type="text" class="form-control" placeholder="Ex: 1 Hour Screen Time">
 					</div>
 				</div>
 			</form>
