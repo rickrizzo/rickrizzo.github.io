@@ -28,6 +28,7 @@
 		<script>
 			//Variables
 			var crumb = document.getElementById("location");
+			var map;
 
 			//Initialize Map
 			function initialize() {
@@ -36,8 +37,8 @@
 					zoom: 8
 				};
 
-				var map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
-
+				map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
+				getLocation();
 			}
 		
 			//Get Location
@@ -48,11 +49,21 @@
 					crumb.innerHTML = "Geolocation not supported";
 				}
 			}
+
+			//Marker Maker
+			function makeMarker(lat, lng) {
+				var marker = new google.maps.Marker({
+					position = new google.maps.LatLng(lat, lng),
+					map = map,
+					title: "Crumb"
+				});
+			}
 			
 			//Output Location
 			function showPosition(position) {
 				crumb.innerHTML += "<br>Latitude: " + position.coords.latitude +
 				"<br>Longitude: " + position.coords.longitude + "<br>";
+				makeMarker(position.coords.latitude, position.coords.longitude);
 			}
 
 			//Load Map
