@@ -38,7 +38,14 @@
 				};
 
 				map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
-				getLocation();
+
+				var myLatlng = new google.maps.LatLng(-25.363882,131.044922);
+				
+				var marker = new google.maps.Marker({
+					position: myLatlng,
+					map: map,
+					title: 'Crumb'
+				});
 			}
 		
 			//Get Location
@@ -51,19 +58,19 @@
 			}
 
 			//Marker Maker
-			function makeMarker(lat, lng) {
-				var marker = new google.maps.Marker({
-					position = new google.maps.LatLng(lat, lng),
-					map = map,
-					title: "Crumb"
-				});
-			}
+			//function makeMarker(lat, lng) {
+				
+			//}
 			
 			//Output Location
 			function showPosition(position) {
 				crumb.innerHTML += "<br>Latitude: " + position.coords.latitude +
 				"<br>Longitude: " + position.coords.longitude + "<br>";
-				makeMarker(position.coords.latitude, position.coords.longitude);
+				var marker = new google.maps.Marker({
+					position: new google.maps.LatLng(position.coords.latitude, position.coords.longitude),
+					map: map,
+					title: 'Crumb'
+				});
 			}
 
 			//Load Map
