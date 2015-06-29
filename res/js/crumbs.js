@@ -10,18 +10,16 @@ function initialize() {
 	}
 	map = new google.maps.Map(document.getElementById("map-canvas"), options);
 
-	// Try W3C Geolocation (Preferred)
-  if(navigator.geolocation) {
-    browserSupportFlag = true;
-    navigator.geolocation.getCurrentPosition(function (position) {
-      initialLocation = new google.maps.LatLng(position.coords.latitude,position.coords.longitude);
-      map.setCenter(initialLocation);
-    }, function() {
-      handleNoGeolocation(browserSupportFlag);
-    });
+
+  	if(navigator.geolocation) {
+    	browserSupportFlag = true;
+    	navigator.geolocation.getCurrentPosition(function (position) {
+      		initialLocation = new google.maps.LatLng(position.coords.latitude,position.coords.longitude);
+      		map.setCenter(initialLocation);
+    	}, function() { handleNoGeolocation(browserSupportFlag);});
   } else {
-    browserSupportFlag = false;
-    handleNoGeolocation(browserSupportFlag);
+    	browserSupportFlag = false;
+    	handleNoGeolocation(browserSupportFlag);
   }
 
   //Handle Errors
@@ -40,17 +38,14 @@ function initialize() {
 //Add Markers
 function getLocation() {
 	if (browserSupportFlag) {
-		var pos;
-		//alert("hello");
-		navigator.getLocation.getCurrentPosition(
-			function (position){
-				pos = new new google.maps.LatLng(position.coords.latitude, position.coords.longitude);
-				alert(pos);
-			}
-		);
-
-		var marker = new google.maps.Marker({position: pos, title: "Marker"});
-		marker.setMap(map);
+		navigator.geolocation.getCurrentPosition(function (position) {
+      		var pos = new google.maps.LatLng(position.coords.latitude,position.coords.longitude);
+      		var marker = new google.maps.Marker({
+      			position: pos,
+      			map: map,
+      			title: 'Marker'
+  			});
+      	});
 	}
 }
 
