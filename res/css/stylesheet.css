@@ -3,5 +3,9 @@ body{
 }
 
 header{
-	text-align:center;
+	text-align: center;
+}
+
+#app{
+	text-align: center;
 }
