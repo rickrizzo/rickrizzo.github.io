@@ -34,6 +34,11 @@ nav h4 {
 }
 
 /*Social*/
+.btn {
+	width: 100%;
+	border-color: #ccc;
+}
+
 .btn-github {
 	color: #b10dc9;
 	background-color: #e5e5e5;
@@ -64,6 +69,12 @@ nav h4 {
 	background-color: #024f75;
 }
 
+/*Secret*/
+#secret{
+	color:#fff;
+	display:none;
+}
+
 /*Footer*/
 footer {
 	margin: 1em;
@@ -83,5 +94,8 @@ footer {
 	}
 	#headshot:hover {
 		box-shadow: 0px 0px 0px 100em rgba(20, 20, 24, 0.5);
+	}
+	#secret {
+		display:block;
 	}
 }
