@@ -1,9 +1,11 @@
+<!--Hey employers!  This site is still in development.
+Check back later and I promise it will be awesome!-->
 <!DOCTYPE html>
 <html>
 	<head>
 		<!--Page Meta-->
 		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>Portfolio</title>
 
 		<!--CSS-->
@@ -13,27 +15,81 @@
 	</head>
 	<body>
 
+		<!--Nav-->
+		<nav>
+			<h4>😀Please excuse the appearance, the site is currently under development😀</h4>
+		</nav>
+
 		<!--Header-->
 		<header>
-			<h1>You've reached Rob Russo's portfolio page. Currently under development. Check back later for details 😀</h1>
-			<h2><a href="https://github.com/rickrizzo">Github</a></h2>
+			<h1 id="name">Robert Russo</h1>
+			<img class="grow" id="headshot" src="res/img/headshot.jpg" alt="#" />
+			<h2>Full Stack Web Developer</h2>
 		</header>
 
-		<div class="social">
-			<h2><a href="https://github.com/rickrizzo">Github</a></h2>
-			<h2><a href="https://www.linkedin.com/in/rrusso44">LinkedIn</a></h2>
-			<h2><a href="https://www.facebook.com/russorob">Facebook</a></h2>
+		<!--Main-->
+		<div id="main" class="container">
+				<div class="row">
+					<div class="col-md-4 aboutme">
+						<h2>Experiences</h2>
+						<h4>Rensselaer Polytechnic Institute</h4>
+						CSCI/ITWS 2017 GPA: 3.7 Honor Roll
+						<h4>Optum Technologies</h4>
+						Developed SAAS applications for Optum using React.js and a RESTful API
+						<h4>PECE</h4>
+						Undergraduate research in the digital humanities
+					</div>
+					<div class="col-md-4 aboutme">
+						<h2>Skills</h2>
+						<h4>Languages:</h4>
+						C/C++, Python, Java, HTML5, CSS3, JavaScript, PHP
+						<h4>Frameworks:</h4>
+						React.js, BootStrap, Ruby on Rails
+						<h4>Platforms:</h4>
+						Salesforce
+					</div>
+					<div class="col-md-4 aboutme">
+						<h2>Projects</h2>
+						<h4>Lapsus Linguae</h4>
+						A web based public speaking tool build on WebRTC
+						<h4>Recipal</h4>
+						Suggestions for what to eat based on your prior choices,
+						what nutrition you need, and more!
+					</div>
+				</div>
 		</div>
 
+		<!--TODO WITH REACT-->
+		<!--Social-->
+		<div id="social" class="container">
+			<h1>Connect with Me</h1>
+			<div class="col-sm-3 col-xs-12">
+				<a class="btn btn-github btn-lg" href="https://github.com/rickrizzo">Github</a>
+			</div>
+			<div class="col-sm-3 col-xs-12">
+				<a class="btn btn-linkedin btn-lg" href="https://www.linkedin.com/in/rrusso44">LinkedIn</a>
+			</div>
+			<div class="col-sm-3 col-xs-12">
+				<a class="btn btn-primary btn-lg" href="https://www.facebook.com/russorob">Facebook</a>
+			</div>
+			<div class="col-sm-3 col-xs-12">
+				<a class="btn btn-info btn-lg" href="https://twitter.com/russo_rob">Twitter</a>
+			</div>
+		</div>
+
+		<!--Footer-->
 		<footer>
-			Created by Rob Russo with <a href="https://facebook.github.io/react/">React.js</a>
+				Created by Robert Russo with <a href="https://facebook.github.io/react/">React.js</a>
+				and <a href="https://getbootstrap.com">Bootstrap</a>
 		</footer>
 
+		<h1 style="color: #fff">Focus on the important things :)</h1>
+
 		<!--JavaScript Libraries-->
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+		<!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 		<script type="text/javascript" src="res/js/JSXTransformer.js"></script>
 		<script type="text/javascript" src="res/js/react.min.js"></script>
-		<script type="text/jsx" src="res/js/main.js"></script>
+		<script type="text/jsx" src="res/js/main.js"></script>-->
 	</body>
 
 </html>
