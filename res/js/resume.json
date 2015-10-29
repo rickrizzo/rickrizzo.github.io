@@ -1,0 +1,44 @@
+{
+  name: "Robert Russo",
+  email: "rrusso44@gmail.com",
+  phone: "20345544422",
+  github: "rickrizzo",
+  education: {
+    school: "Rensselaer Polytechnic Institute",
+    major: ["Computer Science", "Information Technology & Webscience"],
+    GPA: 3.67,
+    gradDate: "May 2017"
+  },
+  experience: {
+    work: {
+      employer: "Optum Technologies",
+      position: "Application Development Intern",
+      date: "June 2015 - August 2015",
+      description: ""
+    },
+    work: {
+      employer: "Rensselaer Center for Open Source",
+      position: "Undergraduate Researcher",
+      date: "January 2014 - Present",
+      description: ""
+    },
+    work: {
+      employer: "Rensselaer Polytechnic Institute",
+      position: "Platform Designer",
+      date: "September 2014 - Present",
+      description: ""
+    },
+    work: {
+      employer: "Self Employed",
+      position: "Web Developer",
+      date: "March 2015 - Present",
+      description: ""
+    }
+  },
+  skills: {
+
+  },
+  leadership: {
+
+  }
+}
