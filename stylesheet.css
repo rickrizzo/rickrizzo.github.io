@@ -52,7 +52,7 @@ footer {
 }
 
 /* Mobile View */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 795px) {
   main {
     margin: 0 1em;
   }
