@@ -1,7 +1,7 @@
 /* Body */
 body {
   text-align: center;
-  max-width: 600px;
+  max-width: 1000px;
   margin: 0 auto;
   font-size: 100%;
   font-family: Garamond;
@@ -34,6 +34,21 @@ a:hover {
 }
 footer {
   font-size: 0.85em;
+}
+
+/* Desktop View */
+@media screen and (min-width: 600px) {
+  main section {
+    float: left;
+    width: 23%;
+    margin: 0 0 0 1em;
+  }
+  main section:last-child {
+    margin: 0;
+  }
+  footer {
+    clear: both;
+  }
 }
 
 /* Mobile View */
