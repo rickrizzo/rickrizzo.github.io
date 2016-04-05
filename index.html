@@ -1,98 +1,58 @@
-<!--Hey employers!  This site is still in development.
-Check back later and I promise it will be awesome!-->
 <!DOCTYPE html>
-<html>
-	<head>
-		<!--Page Meta-->
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<meta name="theme-color" content="#0000ff">
-		<title>Portfolio</title>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <link rel="stylesheet" href="stylesheet.css">
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <h1>Robert Russo</h1>
+    <blockquote>I want to make disruptive software that leaves the world better than I found it.</blockquote>
+    <!-- Contact -->
+    <section>
+      <a href="Resume2015.pdf">Resume</a> |
+      <a href="mailto:rrusso44@gmail.com?Subject=Saw%20Your%20Website">Contact</a> |
+      <a href="https://github.com/rickrizzo">Github</a> |
+      <a href="https://www.linkedin.com/in/rrusso44">LinkedIn</a>
+    </section>
+  </header>
 
-		<!--CSS-->
-		<link href="res/css/stylesheet.css" rel="stylesheet">
-		<link href="res/css/bootstrap.css" rel="stylesheet">
-		<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700,300' rel='stylesheet' type='text/css'>
-		<link rel="icon" href="res/img/favicon.ico" type="image/x-icon" />
-	</head>
-	<body>
+  <hr>
+  
+  <!-- Main -->
+  <main>
+    <!-- Education -->
+    <section>
+      <h2>I am a student.</h2>
+      <p>I study <a href="http://www.cs.rpi.edu/">Computer Science</a> and <a href="http://www.rpi.edu/dept/IT/">Information Technology & Web Science</a> (dual major) at <a href="https://www.rpi.edu">Rensselaer Polytechnic Institute</a>. My GPA is 3.68 and I have been on the honor roll since Fall 2013. My expected graduation date is May 2017.</p>
+    </section>
+    
+    <!-- Experience -->
+    <section>
+      <h2>I am experienced.</h2>
+      <p>I have worked for <a href="https://www.optum.com/">Optum Technologies</a> and <a href="http://www.appatura.com/">Appatura</a>. I have participated in research at Rensselaer Polytechnic Institue and created <a href="https://github.com/rickrizzo/lapsus">my own research project</a> through <a href="https://rcos.io/">RCOS</a>. I have done contract work for <a href="http://redmarkrealty.com/">Red Mark Realty</a>. This summer I will work as a developer for <a href="http://www.apple.com/">Apple Inc</a>.</p>
+    </section>
+    
+    <!-- Activities -->
+    <section>
+      <h2>I am involved.</h2>
+      <p>I lead a <a href="http://designforamerica.com/">Design for America</a> studio. I am a member of <a href="http://www.cs.rpi.edu/~upe/">Epsilon Pi Upsilon</a> and the Vice President of <a href="http://gammanueta.org/">Gamma Nu Eta</a> at my university. I am a <a href="http://alac.rpi.edu/update.do?artcenterkey=29">Learning Assistant</a>. I also tutor Data Structures.</p>
+    </section>
+    
+    <!-- Passion -->
+    <section>
+      <h2>I am passionate.</h2>
+      <p>I co-host <a href="http://tictechtalkshow.com">Tic-Tech-Talk</a>, a weekly podcast on technology.</p>
+    </section>
+  </main>
+  
+  <hr>
 
-		<!--Nav-->
-		<nav>
-			<h4>😀Please excuse the appearance, the site is currently under development😀</h4>
-		</nav>
-
-		<!--Header-->
-		<header>
-			<h1 id="name">Robert Russo</h1>
-			<img class="grow" id="headshot" src="res/img/headshot.jpg" alt="#" />
-			<h2>Full Stack Web Developer</h2>
-		</header>
-
-		<!--Main-->
-		<div id="main" class="container">
-				<!--<div class="row">
-					<div class="col-md-4 aboutme">
-						<h2>Experiences</h2>
-						<h4>Rensselaer Polytechnic Institute</h4>
-						CSCI/ITWS 2017 GPA: 3.7 Honor Roll
-						<h4>Optum Technologies</h4>
-						Developed SAAS applications for Optum using React.js and a RESTful API
-						<h4>PECE</h4>
-						Undergraduate research in the digital humanities
-					</div>
-					<div class="col-md-4 aboutme">
-						<h2>Skills</h2>
-						<h4>Languages:</h4>
-						C/C++, Python, Java, HTML5, CSS3, JavaScript, PHP
-						<h4>Frameworks:</h4>
-						React.js, BootStrap, Ruby on Rails
-						<h4>Platforms:</h4>
-						Salesforce
-					</div>
-					<div class="col-md-4 aboutme">
-						<h2>Projects</h2>
-						<h4>Lapsus Linguae</h4>
-						A web based public speaking tool build on WebRTC
-						<h4>Recipal</h4>
-						Suggestions for what to eat based on your prior choices,
-						what nutrition you need, and more!
-					</div>
-				</div>-->
-		</div>
-
-		<!--TODO WITH REACT-->
-		<!--Social-->
-		<div id="social" class="container">
-			<h1>Connect with Me</h1>
-			<div class="col-sm-3 col-xs-6">
-				<a class="btn btn-github btn-lg" href="https://github.com/rickrizzo">Github</a>
-			</div>
-			<div class="col-sm-3 col-xs-6">
-				<a class="btn btn-linkedin btn-lg" href="https://www.linkedin.com/in/rrusso44">LinkedIn</a>
-			</div>
-			<div class="col-sm-3 col-xs-6">
-				<a class="btn btn-primary btn-lg" href="https://www.facebook.com/russorob">Facebook</a>
-			</div>
-			<div class="col-sm-3 col-xs-6">
-				<a class="btn btn-info btn-lg" href="https://twitter.com/russo_rob">Twitter</a>
-			</div>
-		</div>
-
-		<!--Secret Message-->
-		<h1 id="secret">Focus on the important things :)</h1>
-
-		<!--Footer-->
-		<footer>
-				Created by Robert Russo with <a href="https://facebook.github.io/react/">React.js</a>
-				and <a href="https://getbootstrap.com">Bootstrap</a>
-		</footer>
-
-		<!--JavaScript Libraries-->
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-		<script type="text/javascript" src="res/js/JSXTransformer.js"></script>
-		<script type="text/javascript" src="res/js/react.js"></script>
-		<script type="text/jsx" src="res/js/main.js"></script>
-	</body>
-
+  <!-- Footer -->
+  <footer>
+    Last updated 4/5/2016
+  </footer>
+</body>
 </html>
