@@ -12,8 +12,12 @@ header h1 {
   font-size: 2.3em;
 }
 header a {
-  margin: 0 1em;
+  padding: 0 1em;
   font-weight: bold;
+  border-right: 1px solid black;
+}
+header a:last-child {
+  border-right: none;
 }
 header blockquote {
   font-style: italic;
@@ -30,4 +34,12 @@ a:hover {
 }
 footer {
   font-size: 0.85em;
+}
+
+/* Mobile View */
+@media screen and (max-width: 360px) {
+  header a {
+    padding: 0 2em;
+     border-right: none;
+  }
 }
