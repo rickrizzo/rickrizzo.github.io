@@ -1,0 +1,35 @@
+body {
+  font-family: arial;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  text-align: center; 
+  border-bottom: 1px solid #CECECE;
+}
+
+header h1 {
+  font-size: 2.5em;
+  color: #7BF7DF;
+}
+
+article {
+  margin: 2em;
+  text-align: center;
+}
+
+a.btn {
+  border: 1px solid #CECECE;
+  border-radius: 10px;
+  color: white;
+  background-color: #B69BFF;
+  display: block;
+  padding: 1em;
+  margin: 2em auto;
+  text-decoration: none;
+  max-width: 400px;
+}
+a.btn:hover {
+  background-color: #8B67EC;
+}
