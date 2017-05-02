@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Watch Recomender</title>
+  <!-- CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="stylesheet.css">
+</head>
+
+<body>
+  <!-- Navigation -->
+  <nav class="navbar navbar-default">
+    <div class="container-fluid">
+      <!-- Branding -->
+      <div class="navbar-header">
+        <a class="navbar-brand" href="#">Watch Recomendations</a>
+      </div>
+
+      <!-- Introductory Modal -->
+      <div class="modal fade" tabindex="-1" role="dialog" id="userPreferences">
+        <div class="modal-dialog modal-lg" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h4 class="modal-title">Watch Preferences</h4>
+            </div>
+            <div class="modal-body">
+              <div class="form-group">
+                <div class="btn-group btn-group-justified" role="group" aria-label="...">
+                  <div class="btn-group" role="group">
+                    <button type="button" class="btn btn-default">Classic Watch</button>
+                  </div>
+                  <div class="btn-group" role="group">
+                    <button type="button" class="btn btn-default">Smart Watch</button>
+                  </div>
+                  <div class="btn-group" role="group">
+                    <button type="button" class="btn btn-default">Fitness Watch</button>
+                  </div>
+                </div>
+                <br>
+
+                <label for="favoriteColor">Favorite Color</label>
+                <select class="form-control" id="favoriteColor">
+                  <option value="black">Black</option>
+                  <option value="white">White</option>
+                  <option value="red">Red</option>
+                  <option value="blue">Blue</option>
+                  <option value="yellow">Yellow</option>
+                  <option value="green">Green</option>
+                </select>
+                <br>
+
+                <label for="activityLevel">Frequency of Workout</label>
+                <select class="form-control" id="activityLevel">
+                  <option value="never">Never</option>
+                  <option value="never">Rarely</option>
+                  <option value="never">Monthly</option>
+                  <option value="never">Weekly</option>
+                  <option value="never">Daily</option>
+                </select>
+                <br>
+
+                <div class="input-group">
+                  <input type="checkbox"> Male Styles <br>
+                  <input type="checkbox"> Female Styles <br>
+                </div>
+
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-primary" data-dismiss="modal">Submit</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Search -->
+      <form class="navbar-form navbar-right" role="search">
+        <div class="form-group">
+          <input type="text" class="form-control" placeholder="Search">
+        </div>
+        <button type="submit" class="btn btn-default">Submit</button>
+      </form>
+    </div>
+  </nav>
+
+  <!-- Main -->
+  <main class="container-fluid">
+
+    <!-- Settings Pane -->
+    <div class="col-md-4">
+      <h3 class="panel">Settings</h3>
+      <form action="" class="form-group">
+        <div class="input-group">
+          <span id="zero">$</span><span>$$$</span>
+          <input type="range" id="myRange" value="50">
+        </div>
+        <br>
+        <div class="input-group">
+          <label for="options">Band Material</label> <br>
+          <input type="radio" name="options" value="option1"> Leather<br>
+          <input type="radio" name="options" value="option2"> Rubber<br>
+          <input type="radio" name="options" value="option3"> Woven<br>
+        </div>
+        <br>
+        <label for="favoriteColor">Favorite Color</label>
+        <select class="form-control">
+          <option value="black">Black</option>
+          <option value="white">White</option>
+          <option value="red">Red</option>
+          <option value="blue">Blue</option>
+          <option value="yellow">Yellow</option>
+          <option value="green">Green</option>
+        </select>
+        <br>
+        <br>
+        <label for="activityLevel">Frequency of Workout</label>
+        <select class="form-control">
+          <option value="never">Never</option>
+          <option value="never">Rarely</option>
+          <option value="never">Monthly</option>
+          <option value="never">Weekly</option>
+          <option value="never">Daily</option>
+        </select>
+        <br>
+        <div class="input-group">
+          <label for="options">Watch Style</label> <br>
+          <input type="radio" name="options" value="option1"> Digital<br>
+          <input type="radio" name="options" value="option2"> Analog<br>
+        </div>
+        <br>
+      </form>
+    </div>
+
+    <!-- Content -->
+    <div class="col-md-8">
+      <h3 class="panel">Results</h3>
+      <div class="row panel">
+        <div class="col-md-2 text-center">
+          <img src="https://images-na.ssl-images-amazon.com/images/I/61XgIX8CWEL._SL1001_.jpg" alt="watch">
+          <a href="https://www.amazon.com/Padgene-Bluetooth-Smart-Watch-Camera/dp/B00X9L90RG/ref=sr_1_6?ie=UTF8&qid=1493707983&sr=8-6&keywords=watches" class="btn btn-default">$65</a>
+        </div>
+        <div class="col-md-10">
+          <h1>Watch 1</h1>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt , veniam, aspernatur! Laborum suscipit soluta porro voluptate. Doloremque eveniet molestiae labore necessitatibus tenetur maxime, enim reiciendis reprehenderit illum id. Ad, suscipit.
+            Eum vel dolor deserunt at expedita maxime, temporibus, natus est corporis necessitatibus ad enim culpa quidem, quia facilis autem fugiat quaerat aliquid numquam, aspernatur. Et eaque accusantium, repudiandae soluta sint.
+          </p>
+        </div>
+      </div>
+
+      <div class="row panel">
+        <div class="col-md-2 text-center">
+          <img src="https://images-na.ssl-images-amazon.com/images/I/51DLMsIqGxL.jpg" alt="watch">
+          <a href="https://www.amazon.com/Digital-Military-Waterproof-Luminous-Stopwatch/dp/B018HTGSN8/ref=sr_1_21?ie=UTF8&qid=1493707983&sr=8-21&keywords=watches" class="btn btn-default">$60</a>
+        </div>
+        <div class="col-md-10">
+          <h1>Watch 2</h1>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt , veniam, aspernatur! Laborum suscipit soluta porro voluptate. Doloremque eveniet molestiae labore necessitatibus tenetur maxime, enim reiciendis reprehenderit illum id. Ad, suscipit.
+            Eum vel dolor deserunt at expedita maxime, temporibus, natus est corporis necessitatibus ad enim culpa quidem, quia facilis autem fugiat quaerat aliquid numquam, aspernatur. Et eaque accusantium, repudiandae soluta sint.
+          </p>
+        </div>
+      </div>
+
+      <div class="row panel">
+        <div class="col-md-2 text-center">
+          <img src="https://images-na.ssl-images-amazon.com/images/I/71RY3rrkLgL._SL1500_.jpg" alt="watch">
+          <a href="https://www.amazon.com/CNPGD-Extended-Warranty-Smartwatch-Bluetooth/dp/B00OAOFP34/ref=sr_1_13?ie=UTF8&qid=1493708528&sr=8-13&keywords=watches&th=1" class="btn btn-default">$70</a>
+        </div>
+        <div class="col-md-10">
+          <h1>Watch 3</h1>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt , veniam, aspernatur! Laborum suscipit soluta porro voluptate. Doloremque eveniet molestiae labore necessitatibus tenetur maxime, enim reiciendis reprehenderit illum id. Ad, suscipit.
+            Eum vel dolor deserunt at expedita maxime, temporibus, natus est corporis necessitatibus ad enim culpa quidem, quia facilis autem fugiat quaerat aliquid numquam, aspernatur. Et eaque accusantium, repudiandae soluta sint.
+          </p>
+        </div>
+      </div>
+
+      <div class="row panel">
+        <div class="col-md-2 text-center">
+          <img src="https://images-na.ssl-images-amazon.com/images/I/61YURzV0sLL._SL1300_.jpg" alt="watch">
+          <a href="https://www.amazon.com/DEBBIECTY-Support-Android-abouve-iPhone5s/dp/B01MU6PAKR/ref=sr_1_29?ie=UTF8&qid=1493707983&sr=8-29&keywords=watches" class="btn btn-default">$40</a>
+        </div>
+        <div class="col-md-10">
+          <h1>Watch 4</h1>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt , veniam, aspernatur! Laborum suscipit soluta porro voluptate. Doloremque eveniet molestiae labore necessitatibus tenetur maxime, enim reiciendis reprehenderit illum id. Ad, suscipit.
+            Eum vel dolor deserunt at expedita maxime, temporibus, natus est corporis necessitatibus ad enim culpa quidem, quia facilis autem fugiat quaerat aliquid numquam, aspernatur. Et eaque accusantium, repudiandae soluta sint.
+          </p>
+        </div>
+      </div>
+
+      <!-- Pagination -->
+      <nav id="pagination" aria-label="Page navigation">
+        <ul class="pagination">
+          <li>
+            <a href="#" aria-label="Previous">
+              <span aria-hidden="true">&laquo;</span>
+            </a>
+          </li>
+          <li><a href="#">1</a></li>
+          <li><a href="#">2</a></li>
+          <li><a href="#">3</a></li>
+          <li>
+            <a href="#" aria-label="Next">
+              <span aria-hidden="true">&raquo;</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+    </div>
+  </main>
+
+  <!-- Scripts -->
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <script src="index.js"></script>
+
+</body>
+
+</html>
