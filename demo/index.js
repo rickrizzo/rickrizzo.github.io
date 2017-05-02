@@ -1,6 +1,6 @@
-// $(window).on('load',function(){
-//   $('#userPreferences').modal('show');
-// });
+$(window).on('load',function(){
+ $('#userPreferences').modal('show');
+});
 
 $('.form-group .btn').click(function(e) {
   e.preventDefault();
