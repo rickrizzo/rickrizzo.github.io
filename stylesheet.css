@@ -2,7 +2,31 @@ body {
   text-align: center;
   font-family: -apple-system, BlinkMacSystemFont, sans-serif;
 }
+h1 {
+  font-size: 4em;
+  margin-bottom: 0;
+}
+p, footer {
+  font-size: 1.5em;
+}
+ul {
+  padding: 0;
+  list-style: none;
+}
+li {
+  display: block;
+  padding: 0.5em 0;
+}
 a {
   text-decoration: none;
+  margin: 0 1em;
   color: dodgerblue;
+}
+a:hover {
+  text-decoration: underline;
+}
+@media (min-width: 576px) {
+  li {
+    display: inline;
+  }
 }
